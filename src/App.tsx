@@ -38,7 +38,7 @@ export default function App() {
               <Heading level={3}>이런 일을 했어요</Heading>
               <p>
                 <strong className="font-semibold">
-                  현재는 한국신용데이터에서 일을 하고있어요(2022.08~)
+                  지금은 한국신용데이터에서 일을 하고있어요(2022.08~)
                 </strong>
               </p>
               <UnorderedList
@@ -127,7 +127,7 @@ export default function App() {
             <FadeInUpElement>
               <UnorderedList
                 contents={[
-                  "현재는 사장님들의 매출/비용 관리 서비스(모바일 웹뷰)를 개발하고 있어요",
+                  "지금은 사장님들의 매출/비용 관리 서비스(모바일 웹뷰)를 개발하고 있어요",
                   {
                     className: "list-none",
                     element: (
