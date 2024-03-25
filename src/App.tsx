@@ -8,7 +8,7 @@ import UnorderedList from "@/components/UnorderedList";
 export default function App() {
   return (
     <>
-      <header className="fixed top-0 flex h-[4.25rem] w-full items-center bg-white px-6">
+      <header className="fixed top-0 z-10 flex h-[4.25rem] w-full items-center bg-white px-6">
         <span className="font-black text-carrot-500 typo-subtitle2">수현</span>
       </header>
       <div className="flex flex-col items-center pt-[6.25rem]">
