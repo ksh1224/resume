@@ -3,10 +3,12 @@ import { ReactNode } from "react";
 
 const Heading = ({
   children,
+  className,
   level,
 }: {
   children: ReactNode;
-  level: 1 | 3;
+  className?: string;
+  level: 1 | 2 | 3;
 }) => {
   return (
     <h3
@@ -14,7 +16,10 @@ const Heading = ({
         "mb-4",
         level === 1
           ? "font-semibold typo-subtitle2 xs:typo-heading3"
-          : "font-semibold typo-subtitle4",
+          : level === 2
+            ? "font-semibold typo-subtitle2"
+            : "font-semibold typo-subtitle4",
+        className,
       )}
     >
       {children}
