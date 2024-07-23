@@ -6,8 +6,93 @@ export default function Project() {
     <>
       <Heading level={2}>프로젝트</Heading>
       <hr className="pb-4" />
+      <Heading level={3}>1. 디자인 시스템 개선 작업 (한국신용데이터)</Heading>
+      <UnorderedList
+        contents={[
+          "문제",
+          {
+            className: "list-none",
+            element: (
+              <UnorderedList
+                className="list-[circle]"
+                contents={[
+                  "큰 번들 사이즈로 인해 성능에 문제 발생",
+                  "tree shaking이 제대로 안되고 있어 import 시 문제 발생",
+                ]}
+              />
+            ),
+          },
+          {
+            className: "list-none h-1",
+            element: <></>,
+          },
+          "목표",
+          {
+            className: "list-none",
+            element: (
+              <UnorderedList
+                className="list-[circle]"
+                contents={["번들 사이즈 축소", "tree shaking 이슈 해결"]}
+              />
+            ),
+          },
+          {
+            className: "list-none h-1",
+            element: <></>,
+          },
+          "해결 과정",
+          {
+            className: "list-none",
+            element: (
+              <UnorderedList
+                className="list-[circle]"
+                contents={[
+                  "사용중이던 typescript, Rollup 및 플러그인 버전 업데이트",
+                  "불필요한 플러그인 제거 및 번들 사이즈 최적화 작업",
+                  "Storybook 버전 업데이트 및 이슈 수정",
+                  "용량이 큰 라이브러리를 사용 중인 컴포넌트를 자체 제작 컴포넌트로 교체",
+                ]}
+              />
+            ),
+          },
+          {
+            className: "list-none h-1",
+            element: <></>,
+          },
+          "성과",
+          {
+            className: "list-none",
+            element: (
+              <UnorderedList
+                className="list-[circle]"
+                contents={[
+                  "500kb가 넘는 번들 사이즈를 200kb 미만으로 축소",
+                  "tree shaking 이슈 수정",
+                ]}
+              />
+            ),
+          },
+          {
+            className: "list-none h-1",
+            element: <></>,
+          },
+          "기술 스택",
+          {
+            className: "list-none",
+            element: (
+              <UnorderedList
+                className="list-[circle]"
+                contents={[
+                  "TypeScript, React, Rollup, Storybook, Tailwind CSS 등",
+                ]}
+              />
+            ),
+          },
+        ]}
+      />
+      <br />
       <Heading level={3}>
-        1. 장부 서비스 프로젝트 개선 작업 (한국신용데이터)
+        2. 장부 서비스 프로젝트 개선 작업 (한국신용데이터)
       </Heading>
       <UnorderedList
         contents={[
@@ -53,7 +138,7 @@ export default function Project() {
                 className="list-[circle]"
                 contents={[
                   "기존에 cra로 관리하던 프로젝트를 webpack으로 바꾸면서 불필요해진 라이브러리 제거",
-                  "typescript 관련 라이브러리 최신 버전 업데이트 후 패키지매니저 yarn -> pnpm 전환, 번들러 webpack -> vite 전환",
+                  "typescript 관련 라이브러리 최신 버전 업데이트 후 패키지매니저 yarn -> pnpm 전환",
                   "husky 및 lint-staged 도입 후 컴파일, 린트 커밋할 때 검사하도록 변경하고 빌드 시 린트 검사 옵션 제거",
                   "기존에 사용 중인 react router 라이브러리 최신버전 업데이트 및 라우터 자동화 코드 개편",
                 ]}
@@ -88,7 +173,7 @@ export default function Project() {
               <UnorderedList
                 className="list-[circle]"
                 contents={[
-                  "TypeScript, Vite, React Router, TanStack Query, Tailwind CSS, 등",
+                  "TypeScript, React Router, TanStack Query, Tailwind CSS, 등",
                 ]}
               />
             ),
@@ -96,7 +181,7 @@ export default function Project() {
         ]}
       />
       <br />
-      <Heading level={3}>2. 커뮤니티 서비스 개편 (한국신용데이터)</Heading>
+      <Heading level={3}>3. 커뮤니티 서비스 개편 (한국신용데이터)</Heading>
       <UnorderedList
         contents={[
           "문제",
@@ -186,7 +271,7 @@ export default function Project() {
       />
       <br />
       <Heading level={3}>
-        3. 커뮤니티 서비스 어드민 개편 (한국신용데이터)
+        4. 커뮤니티 서비스 어드민 개편 (한국신용데이터)
       </Heading>
       <UnorderedList
         contents={[
@@ -276,7 +361,7 @@ export default function Project() {
         ]}
       />
       <br />
-      <Heading level={3}>4. 타운카 회원 가입 플로우 개편 (타운즈)</Heading>
+      <Heading level={3}>5. 타운카 회원 가입 플로우 개편 (타운즈)</Heading>
       <UnorderedList
         contents={[
           "문제",

@@ -23,6 +23,7 @@ export default function Skills() {
         <UnorderedList contents={["TanStack Query"]} />
         <UnorderedList contents={["React Router"]} />
         <UnorderedList contents={["React Native"]} />
+        <UnorderedList contents={["JQuery"]} />
         <div className="col-span-2">
           <br />
           <Heading level={3}>Bundler</Heading>
